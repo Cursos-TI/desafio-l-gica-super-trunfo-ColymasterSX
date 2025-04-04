@@ -102,7 +102,7 @@
     printf("> (Densidade Populacional) digite 5\n");
     printf("> (PIB per capita) digite 6\n");
     printf("> (Super poder) digite 7\n");
-    printf("Tema escolhido: ");
+    printf("Atributo escolhido: ");
     scanf("%d", &atributo);// ta recebendo o valor da variavel atributo para o switch
     printf("\n");
 
