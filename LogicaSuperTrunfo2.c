@@ -192,14 +192,13 @@
     {
        printf("--- Você venceu parabens ---");
 
-    }else if (resultado1 != resultado2)
+    }else if (resultado1 != resultado2)//se resultado1 for diferente de resultado2
     {
        printf("--- Deu impate ---");//impata se um dos resultado receber 1
     }else
     {
         printf("--- Você perdeu ---");//perde se os 2 resultados receber 0
     }
-    
     
       return 0;
   }
