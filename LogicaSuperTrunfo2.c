@@ -106,9 +106,10 @@
     printf("> (PIB per capita) digite 6\n");
     printf("> (Super poder) digite 7\n");
     printf("Atributo escolhido: ");
-    scanf("%d", &atributo1);// ta recebendo o valor da variavel atributo para o switch
+    scanf("%d", &atributo1);// ta recebendo o valor da variavel atributo1 para o switch
     printf("\n");
 
+    //linhas de codego que define a escolha do usuario pra comparação dos atributos,fazendo que a variavel resultado1 receba 1 pra verdadeira e 0 pra falsa
     switch (atributo1)
     {
     case 1:
@@ -142,16 +143,17 @@
     }
     printf("\n");
 
+    //ta informando o usuario pra escolher outro atributo diferente
     printf("Escolha a segunda comparação(tem que ser difente da primeira)\n");
     printf("Segundo atributo escolhido: ");
-    scanf("%d", &atributo2);
+    scanf("%d", &atributo2);//ta recebendo o valor do escolhido do usuario da variavel atributo2 para o switch
     printf("\n");
 
-    if (resultado1 == resultado2)
+    if (resultado1 == resultado2)//ta fazendo que se,o usuario usa o mesmo atributo igual do primeiro,nao vai conseguir usar
     {
        printf("*** E o mesmo atributo do primeiro ***\n");
     }else{
-        switch (atributo2)
+        switch (atributo2)//linhas de codego que define a escolha do usuario pra comparação dos atributos,fazendo que a variavel resultado2 receba 1 pra verdadeira e 0 pra falsa
     {
     case 1:
       printf("Escolheu População\n");
@@ -184,14 +186,18 @@
     }
     }
     
-    if (resultado1 && resultado2)
+    //ta defindo o resultado das comparações escolhidas
+
+    if (resultado1 && resultado2)//ganhar se os 2 resultados resultado receber 1
     {
        printf("--- Você venceu parabens ---");
+
     }else if (resultado1 != resultado2)
     {
-       printf("--- Deu impate ---");
-    }else{
-        printf("--- Você perdeu ---");
+       printf("--- Deu impate ---");//impata se um dos resultado receber 1
+    }else
+    {
+        printf("--- Você perdeu ---");//perde se os 2 resultados receber 0
     }
     
     
